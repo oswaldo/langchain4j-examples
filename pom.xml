@@ -21,6 +21,7 @@
         <module>other-examples</module>
         <module>pinecone-example</module>
         <module>redis-example</module>
+        <module>scala-examples</module>
         <module>spring-boot-example</module>
         <module>vertex-ai-gemini-examples</module>
         <module>vespa-example</module>
