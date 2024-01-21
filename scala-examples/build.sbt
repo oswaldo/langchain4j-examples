@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "dev.langchain4j" % "langchain4j-embeddings-all-minilm-l6-v2"   % langchain4jVersion,
   "dev.langchain4j" % "langchain4j-document-parser-apache-pdfbox" % langchain4jVersion,
   "dev.langchain4j" % "langchain4j-document-parser-apache-poi"    % langchain4jVersion,
-  "org.mapdb"       % "mapdb"                                     % "3.0.9" exclude ("org.jetbrains.kotlin", "kotlin-stdlib"),
+  "org.mapdb"       % "mapdb"                                     % "3.0.10" exclude ("org.jetbrains.kotlin", "kotlin-stdlib"),
   "org.tinylog"     % "tinylog-impl"                              % tinylogVersion,
   "org.tinylog"     % "slf4j-tinylog"                             % tinylogVersion,
 )
