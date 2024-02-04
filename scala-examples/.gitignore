@@ -27,6 +27,7 @@ lib_managed/
 src_managed/
 project/boot/
 project/plugins/project/
+project/project/
 .history
 .cache
 .lib/
@@ -37,4 +38,5 @@ hs_err_pid*
 .bloop/
 project/metals.sbt
 .bsp/
-
+.metals/
+multi-user-chat-memory.db

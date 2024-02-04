@@ -41,7 +41,7 @@ object ChatWithDocumentsExamples:
     val document =
       loadDocument(happyCarrotTxt, new TextDocumentParser())
     ingestor.ingest(document)
-    apiKey.foreach { key =>
+    apiKey.foreach: key =>
       val chain = ConversationalRetrievalChain
         .builder()
         .chatLanguageModel(OpenAiChatModel.withApiKey(key))
@@ -51,7 +51,6 @@ object ChatWithDocumentsExamples:
         .build()
       val answer = chain.execute("Who is Charlie?")
       println(answer) // Charlie is a cheerful carrot living in VeggieVille...
-    }
 
   @main def ifYouNeedMoreControl() =
     val happyCarrotTxt = toPath("other-examples/src/main/resources/example-files/story-about-happy-carrot.txt")
@@ -93,7 +92,7 @@ object ChatWithDocumentsExamples:
       "information" -> information,
     )
     val prompt = promptTemplate.apply(variables.asJava)
-    apiKey.foreach { key =>
+    apiKey.foreach: key =>
       // Send the prompt to the OpenAI chat model
       val chatModel = OpenAiChatModel
         .builder()
@@ -104,7 +103,6 @@ object ChatWithDocumentsExamples:
       // See an answer from the model
       val answer = aiMessage.text()
       println(answer) // Charlie is a cheerful carrot living in VeggieVille...
-    }
 
   def toPath(fileName: String): java.nio.file.Path =
     (
