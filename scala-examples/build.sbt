@@ -2,7 +2,7 @@
 name := "scala-examples"
 
 val langchain4jVersion = "0.25.0"
-val tinylogVersion     = "2.6.2"
+val tinylogVersion     = "2.7.0"
 
 version := langchain4jVersion
 
