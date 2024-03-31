@@ -1,7 +1,7 @@
 //Scala 3 project to exemplify the use of lang4j with Scala
 name := "scala-examples"
 
-val langchain4jVersion = "0.25.0"
+val langchain4jVersion = "0.29.1"
 val tinylogVersion     = "2.6.2"
 
 version := langchain4jVersion
